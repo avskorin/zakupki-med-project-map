@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Анализ файла sales.csv · Карта проекта</title>
+<meta name="description" content="Воронка по месяцам, конверсии переходов, тренд первого и второго полугодия.">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark"></span>
+      <span class="brand-text">Карта проекта<small>Закупки · медицинские учреждения</small></span>
+    </a>
+    <nav class="top-nav" aria-label="Разделы"><a href="../index.html#analysis">Анализ</a><a href="../index.html#result">Результат</a><a href="../index.html#data">Данные</a></nav>
+  </div>
+</header>
+<main class="wrap">
+<nav class="crumbs" aria-label="Хлебные крошки"><a href="../index.html">Главная</a><span>/</span><a href="../index.html#analysis">Анализ данных</a><span>/</span><span>01. Продажи</span></nav>
+<article class="prose">
+<h1 id="salescsv">Анализ файла sales.csv</h1>
+<p><strong>Единица наблюдения:</strong> когорта по месяцу входящего обращения. В файле 12 когорт, 2 330 входящих обращений, 244 первые оплаты тарифа, 212 первых закупок, добавленных в работу. Денежных показателей (цены, суммы, выручка) в файле нет.</p>
+<h2 id="1">Таблица 1. Абсолютные значения по когортам</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Когорта</th>
+<th style="text-align: right;">Входящее обращение</th>
+<th style="text-align: right;">Квалифицирован</th>
+<th style="text-align: right;">Промодоступ или демо</th>
+<th style="text-align: right;">Выставлен счёт на тариф</th>
+<th style="text-align: right;">Первая оплата тарифа</th>
+<th style="text-align: right;">Первая закупка добавлена в работу</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025-01</td>
+<td style="text-align: right;">180</td>
+<td style="text-align: right;">83</td>
+<td style="text-align: right;">56</td>
+<td style="text-align: right;">26</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr>
+<td>2025-02</td>
+<td style="text-align: right;">180</td>
+<td style="text-align: right;">97</td>
+<td style="text-align: right;">74</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">18</td>
+</tr>
+<tr>
+<td>2025-03</td>
+<td style="text-align: right;">184</td>
+<td style="text-align: right;">115</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">27</td>
+</tr>
+<tr>
+<td>2025-04</td>
+<td style="text-align: right;">195</td>
+<td style="text-align: right;">110</td>
+<td style="text-align: right;">74</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">26</td>
+</tr>
+<tr>
+<td>2025-05</td>
+<td style="text-align: right;">188</td>
+<td style="text-align: right;">102</td>
+<td style="text-align: right;">81</td>
+<td style="text-align: right;">38</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">21</td>
+</tr>
+<tr>
+<td>2025-06</td>
+<td style="text-align: right;">186</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;">61</td>
+<td style="text-align: right;">26</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">17</td>
+</tr>
+<tr>
+<td>2025-07</td>
+<td style="text-align: right;">193</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">73</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr>
+<td>2025-08</td>
+<td style="text-align: right;">207</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">74</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">19</td>
+</tr>
+<tr>
+<td>2025-09</td>
+<td style="text-align: right;">199</td>
+<td style="text-align: right;">102</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr>
+<td>2025-10</td>
+<td style="text-align: right;">201</td>
+<td style="text-align: right;">104</td>
+<td style="text-align: right;">69</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td>2025-11</td>
+<td style="text-align: right;">207</td>
+<td style="text-align: right;">114</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">21</td>
+</tr>
+<tr>
+<td>2025-12</td>
+<td style="text-align: right;">210</td>
+<td style="text-align: right;">115</td>
+<td style="text-align: right;">79</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr>
+<td><strong>Итого</strong></td>
+<td style="text-align: right;"><strong>2 330</strong></td>
+<td style="text-align: right;"><strong>1 222</strong></td>
+<td style="text-align: right;"><strong>884</strong></td>
+<td style="text-align: right;"><strong>332</strong></td>
+<td style="text-align: right;"><strong>244</strong></td>
+<td style="text-align: right;"><strong>212</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="2">Таблица 2. Конверсии переходов и сквозные конверсии по когортам</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Когорта</th>
+<th style="text-align: right;">Квалифицирован из входящего обращения</th>
+<th style="text-align: right;">Промодоступ или демо из квалифицированных</th>
+<th style="text-align: right;">Выставлен счёт на тариф из промодоступа или демо</th>
+<th style="text-align: right;">Первая оплата тарифа из выставленного счёта</th>
+<th style="text-align: right;">Первая закупка добавлена в работу из первой оплаты</th>
+<th style="text-align: right;">Сквозная: входящее обращение → первая оплата тарифа</th>
+<th style="text-align: right;">Сквозная: входящее обращение → первая закупка добавлена в работу</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025-01</td>
+<td style="text-align: right;">46,1%</td>
+<td style="text-align: right;">67,5%</td>
+<td style="text-align: right;">46,4%</td>
+<td style="text-align: right;">61,5%</td>
+<td style="text-align: right;">68,8%</td>
+<td style="text-align: right;">8,9%</td>
+<td style="text-align: right;">6,1%</td>
+</tr>
+<tr>
+<td>2025-02</td>
+<td style="text-align: right;">53,9%</td>
+<td style="text-align: right;">76,3%</td>
+<td style="text-align: right;">32,4%</td>
+<td style="text-align: right;">83,3%</td>
+<td style="text-align: right;">90,0%</td>
+<td style="text-align: right;">11,1%</td>
+<td style="text-align: right;">10,0%</td>
+</tr>
+<tr>
+<td>2025-03</td>
+<td style="text-align: right;">62,5%</td>
+<td style="text-align: right;">76,5%</td>
+<td style="text-align: right;">40,9%</td>
+<td style="text-align: right;">86,1%</td>
+<td style="text-align: right;">87,1%</td>
+<td style="text-align: right;">16,8%</td>
+<td style="text-align: right;">14,7%</td>
+</tr>
+<tr>
+<td>2025-04</td>
+<td style="text-align: right;">56,4%</td>
+<td style="text-align: right;">67,3%</td>
+<td style="text-align: right;">50,0%</td>
+<td style="text-align: right;">81,1%</td>
+<td style="text-align: right;">86,7%</td>
+<td style="text-align: right;">15,4%</td>
+<td style="text-align: right;">13,3%</td>
+</tr>
+<tr>
+<td>2025-05</td>
+<td style="text-align: right;">54,3%</td>
+<td style="text-align: right;">79,4%</td>
+<td style="text-align: right;">46,9%</td>
+<td style="text-align: right;">63,2%</td>
+<td style="text-align: right;">87,5%</td>
+<td style="text-align: right;">12,8%</td>
+<td style="text-align: right;">11,2%</td>
+</tr>
+<tr>
+<td>2025-06</td>
+<td style="text-align: right;">45,7%</td>
+<td style="text-align: right;">71,8%</td>
+<td style="text-align: right;">42,6%</td>
+<td style="text-align: right;">73,1%</td>
+<td style="text-align: right;">89,5%</td>
+<td style="text-align: right;">10,2%</td>
+<td style="text-align: right;">9,1%</td>
+</tr>
+<tr>
+<td>2025-07</td>
+<td style="text-align: right;">49,2%</td>
+<td style="text-align: right;">76,8%</td>
+<td style="text-align: right;">38,4%</td>
+<td style="text-align: right;">75,0%</td>
+<td style="text-align: right;">95,2%</td>
+<td style="text-align: right;">10,9%</td>
+<td style="text-align: right;">10,4%</td>
+</tr>
+<tr>
+<td>2025-08</td>
+<td style="text-align: right;">48,3%</td>
+<td style="text-align: right;">74,0%</td>
+<td style="text-align: right;">43,2%</td>
+<td style="text-align: right;">75,0%</td>
+<td style="text-align: right;">79,2%</td>
+<td style="text-align: right;">11,6%</td>
+<td style="text-align: right;">9,2%</td>
+</tr>
+<tr>
+<td>2025-09</td>
+<td style="text-align: right;">51,3%</td>
+<td style="text-align: right;">68,6%</td>
+<td style="text-align: right;">22,9%</td>
+<td style="text-align: right;">68,8%</td>
+<td style="text-align: right;">100,0%</td>
+<td style="text-align: right;">5,5%</td>
+<td style="text-align: right;">5,5%</td>
+</tr>
+<tr>
+<td>2025-10</td>
+<td style="text-align: right;">51,7%</td>
+<td style="text-align: right;">66,3%</td>
+<td style="text-align: right;">24,6%</td>
+<td style="text-align: right;">41,2%</td>
+<td style="text-align: right;">85,7%</td>
+<td style="text-align: right;">3,5%</td>
+<td style="text-align: right;">3,0%</td>
+</tr>
+<tr>
+<td>2025-11</td>
+<td style="text-align: right;">55,1%</td>
+<td style="text-align: right;">74,6%</td>
+<td style="text-align: right;">36,5%</td>
+<td style="text-align: right;">80,6%</td>
+<td style="text-align: right;">84,0%</td>
+<td style="text-align: right;">12,1%</td>
+<td style="text-align: right;">10,1%</td>
+</tr>
+<tr>
+<td>2025-12</td>
+<td style="text-align: right;">54,8%</td>
+<td style="text-align: right;">68,7%</td>
+<td style="text-align: right;">26,6%</td>
+<td style="text-align: right;">76,2%</td>
+<td style="text-align: right;">93,8%</td>
+<td style="text-align: right;">7,6%</td>
+<td style="text-align: right;">7,1%</td>
+</tr>
+<tr>
+<td><strong>Итого</strong></td>
+<td style="text-align: right;"><strong>52,4%</strong></td>
+<td style="text-align: right;"><strong>72,3%</strong></td>
+<td style="text-align: right;"><strong>37,6%</strong></td>
+<td style="text-align: right;"><strong>73,5%</strong></td>
+<td style="text-align: right;"><strong>86,9%</strong></td>
+<td style="text-align: right;"><strong>10,5%</strong></td>
+<td style="text-align: right;"><strong>9,1%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="3">Таблица 3. Сквозные конверсии по периодам</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Период</th>
+<th style="text-align: right;">Входящее обращение → квалифицирован</th>
+<th style="text-align: right;">Входящее обращение → промодоступ или демо</th>
+<th style="text-align: right;">Входящее обращение → выставлен счёт на тариф</th>
+<th style="text-align: right;">Входящее обращение → первая оплата тарифа</th>
+<th style="text-align: right;">Входящее обращение → первая закупка добавлена в работу</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025 год</td>
+<td style="text-align: right;">52,4%</td>
+<td style="text-align: right;">37,9%</td>
+<td style="text-align: right;">14,2%</td>
+<td style="text-align: right;">10,5%</td>
+<td style="text-align: right;">9,1%</td>
+</tr>
+<tr>
+<td>Первое полугодие</td>
+<td style="text-align: right;">53,2%</td>
+<td style="text-align: right;">39,0%</td>
+<td style="text-align: right;">16,8%</td>
+<td style="text-align: right;">12,6%</td>
+<td style="text-align: right;">10,8%</td>
+</tr>
+<tr>
+<td>Второе полугодие</td>
+<td style="text-align: right;">51,8%</td>
+<td style="text-align: right;">37,0%</td>
+<td style="text-align: right;">11,9%</td>
+<td style="text-align: right;">8,5%</td>
+<td style="text-align: right;">7,6%</td>
+</tr>
+<tr>
+<td>Первый квартал</td>
+<td style="text-align: right;">54,2%</td>
+<td style="text-align: right;">40,1%</td>
+<td style="text-align: right;">15,8%</td>
+<td style="text-align: right;">12,3%</td>
+<td style="text-align: right;">10,3%</td>
+</tr>
+<tr>
+<td>Второй квартал</td>
+<td style="text-align: right;">52,2%</td>
+<td style="text-align: right;">38,0%</td>
+<td style="text-align: right;">17,8%</td>
+<td style="text-align: right;">12,8%</td>
+<td style="text-align: right;">11,2%</td>
+</tr>
+<tr>
+<td>Третий квартал</td>
+<td style="text-align: right;">49,6%</td>
+<td style="text-align: right;">36,2%</td>
+<td style="text-align: right;">12,7%</td>
+<td style="text-align: right;">9,3%</td>
+<td style="text-align: right;">8,3%</td>
+</tr>
+<tr>
+<td>Четвёртый квартал</td>
+<td style="text-align: right;">53,9%</td>
+<td style="text-align: right;">37,7%</td>
+<td style="text-align: right;">11,2%</td>
+<td style="text-align: right;">7,8%</td>
+<td style="text-align: right;">6,8%</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="_1">Факты</h2>
+<ol>
+<li>Из 2 330 входящих обращений до квалификации не дошли 1 108, до промодоступа или демо — ещё 338, до выставленного счёта на тариф — ещё 552, до первой оплаты тарифа — ещё 88, до первой закупки, добавленной в работу, — ещё 32.</li>
+<li>Самая низкая конверсия перехода — из промодоступа или демо в выставленный счёт на тариф: 37,6% за год. Самая высокая — из первой оплаты тарифа в первую закупку, добавленную в работу: 86,9% за год.</li>
+<li>Разброс по месяцам: квалификация 45,7–62,5%, промодоступ или демо 66,3–79,4%, выставленный счёт 22,9–50,0%, первая оплата 41,2–86,1%, первая закупка в работе 68,8–100,0%.</li>
+<li>Стандартное отклонение по месяцам: квалификация 4,8 процентного пункта, промодоступ или демо 4,5, выставленный счёт 9,2, первая оплата 12,3, первая закупка в работе 8,0. Наибольшая изменчивость — на переходе из выставленного счёта в первую оплату тарифа.</li>
+<li>Сквозная конверсия из входящего обращения в первую оплату тарифа: 10,5% за год, 12,6% в первом полугодии и 8,5% во втором. Первых оплат: 140 в первом полугодии и 104 во втором.</li>
+</ol>
+<h2 id="_2">Закономерности</h2>
+<ol>
+<li>Количество входящих обращений растёт: 180 в январе, 210 в декабре, плюс 30 обращений (16,7%). Количество первых оплат тарифа не растёт: 16 в январе и 16 в декабре.</li>
+<li>Сквозная конверсия в первую оплату тарифа снижается по кварталам: 12,3%, 12,8%, 9,3%, 7,8%.</li>
+<li>Конверсии первых двух переходов стабильны между полугодиями: квалификация 53,1% и 51,7%, промодоступ или демо 73,1% и 71,5%. Снижаются поздние переходы: выставленный счёт 43,2% и 32,0%, первая оплата 74,7% и 69,5%.</li>
+<li>Переход из первой оплаты тарифа в первую закупку, добавленную в работу, наоборот, выше во втором полугодии: 85,7% против 88,5%.</li>
+<li>В сентябре и октябре одновременно минимальны конверсия в выставленный счёт (22,9% и 24,6%) и число выставленных счетов (16 и 17). В эти же два месяца минимально число первых оплат тарифа: 11 и 7.</li>
+</ol>
+<h2 id="_3">Отклонения</h2>
+<ol>
+<li>Октябрь — минимальные значения года: 7 первых оплат тарифа, сквозная конверсия в первую оплату 3,5%, конверсия из выставленного счёта в первую оплату 41,2%. Это на 20,3 процентного пункта ниже следующего минимума (январь, 61,5%).</li>
+<li>Сентябрь — минимальная конверсия из промодоступа или демо в выставленный счёт: 22,9% при 16 счетах.</li>
+<li>Декабрь — низкая конверсия из промодоступа или демо в выставленный счёт (26,6%) при высокой конверсии из выставленного счёта в первую оплату (76,2%).</li>
+<li>Март — максимальная сквозная конверсия в первую оплату тарифа (16,8%), максимальное число первых оплат (31) и первых закупок, добавленных в работу (27).</li>
+<li>Апрель — максимальная конверсия из промодоступа или демо в выставленный счёт: 50,0%.</li>
+<li>Ноябрь — восстановление после сентября и октября: 25 первых оплат тарифа и сквозная конверсия в первую оплату 12,1%.</li>
+<li>Январь — минимальная конверсия из входящего обращения в квалификацию: 46,1%.</li>
+</ol>
+<nav class="pager" aria-label="Навигация по страницам"><span class="pager-empty"></span><a class="pager-next" href="../artifacts/02a-analiz-non-clients.html"><span>Далее</span>02. Отказы</a></nav></article>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Учебный кейс 4 · анализ продукта «Закупки» за 2025 год · данные обезличены.</p>
+    <p>Собрано статически из Markdown: <code>python build.py</code>.</p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Анализ файла retention.csv · Карта проекта</title>
+<meta name="description" content="Когортное удержание девяти зрелых когорт, отток к 12-му месяцу, провалы.">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark"></span>
+      <span class="brand-text">Карта проекта<small>Закупки · медицинские учреждения</small></span>
+    </a>
+    <nav class="top-nav" aria-label="Разделы"><a href="../index.html#analysis">Анализ</a><a href="../index.html#result">Результат</a><a href="../index.html#data">Данные</a></nav>
+  </div>
+</header>
+<main class="wrap">
+<nav class="crumbs" aria-label="Хлебные крошки"><a href="../index.html">Главная</a><span>/</span><a href="../index.html#analysis">Анализ данных</a><span>/</span><span>03. Удержание</span></nav>
+<article class="prose">
+<h1 id="retentioncsv">Анализ файла retention.csv</h1>
+<p><strong>Что в файле:</strong> 12 когорт по месяцу первой оплаты, значения — абсолютное число клиентов в каждом месяце жизни (с первого по двенадцатый). Первый месяц когорты принят за 100%, остальные значения рассчитаны как отношение к нему. Всего в первых месяцах 12 когорт — 3 684 клиента. Пустая ячейка означает, что когорта ещё не прожила этот месяц.</p>
+<h2 id="1">Таблица 1. Удержание когорт, в процентах от первого месяца</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Когорта</th>
+<th style="text-align: right;">Клиентов в первом месяце</th>
+<th style="text-align: right;">Месяц 2</th>
+<th style="text-align: right;">Месяц 3</th>
+<th style="text-align: right;">Месяц 6</th>
+<th style="text-align: right;">Месяц 9</th>
+<th style="text-align: right;">Месяц 12</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025-01</td>
+<td style="text-align: right;">303</td>
+<td style="text-align: right;">87,1%</td>
+<td style="text-align: right;">81,8%</td>
+<td style="text-align: right;">74,3%</td>
+<td style="text-align: right;">55,4%</td>
+<td style="text-align: right;">53,5%</td>
+</tr>
+<tr>
+<td>2025-02</td>
+<td style="text-align: right;">304</td>
+<td style="text-align: right;">89,8%</td>
+<td style="text-align: right;">81,6%</td>
+<td style="text-align: right;">75,0%</td>
+<td style="text-align: right;">53,6%</td>
+<td style="text-align: right;">50,7%</td>
+</tr>
+<tr>
+<td>2025-03</td>
+<td style="text-align: right;">309</td>
+<td style="text-align: right;">90,0%</td>
+<td style="text-align: right;">83,8%</td>
+<td style="text-align: right;">74,8%</td>
+<td style="text-align: right;">54,7%</td>
+<td style="text-align: right;">51,5%</td>
+</tr>
+<tr>
+<td>2025-04</td>
+<td style="text-align: right;">324</td>
+<td style="text-align: right;">89,2%</td>
+<td style="text-align: right;">83,0%</td>
+<td style="text-align: right;">58,3%</td>
+<td style="text-align: right;">53,1%</td>
+<td style="text-align: right;">47,5%</td>
+</tr>
+<tr>
+<td>2025-05</td>
+<td style="text-align: right;">315</td>
+<td style="text-align: right;">90,5%</td>
+<td style="text-align: right;">83,5%</td>
+<td style="text-align: right;">61,3%</td>
+<td style="text-align: right;">55,9%</td>
+<td style="text-align: right;">55,2%</td>
+</tr>
+<tr>
+<td>2025-06</td>
+<td style="text-align: right;">314</td>
+<td style="text-align: right;">88,9%</td>
+<td style="text-align: right;">81,8%</td>
+<td style="text-align: right;">58,3%</td>
+<td style="text-align: right;">55,1%</td>
+<td style="text-align: right;">52,9%</td>
+</tr>
+<tr>
+<td>2025-07</td>
+<td style="text-align: right;">323</td>
+<td style="text-align: right;">89,5%</td>
+<td style="text-align: right;">67,5%</td>
+<td style="text-align: right;">58,5%</td>
+<td style="text-align: right;">52,9%</td>
+<td style="text-align: right;">49,5%</td>
+</tr>
+<tr>
+<td>2025-08</td>
+<td style="text-align: right;">341</td>
+<td style="text-align: right;">75,4%</td>
+<td style="text-align: right;">68,3%</td>
+<td style="text-align: right;">58,4%</td>
+<td style="text-align: right;">53,1%</td>
+<td style="text-align: right;">51,0%</td>
+</tr>
+<tr>
+<td>2025-09</td>
+<td style="text-align: right;">284</td>
+<td style="text-align: right;">73,2%</td>
+<td style="text-align: right;">66,2%</td>
+<td style="text-align: right;">58,5%</td>
+<td style="text-align: right;">56,3%</td>
+<td style="text-align: right;">54,6%</td>
+</tr>
+<tr>
+<td>2025-10</td>
+<td style="text-align: right;">285</td>
+<td style="text-align: right;">74,7%</td>
+<td style="text-align: right;">68,4%</td>
+<td style="text-align: right;">61,1%</td>
+<td style="text-align: right;">55,8%</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr>
+<td>2025-11</td>
+<td style="text-align: right;">285</td>
+<td style="text-align: right;">70,2%</td>
+<td style="text-align: right;">64,6%</td>
+<td style="text-align: right;">55,4%</td>
+<td style="text-align: right;">53,0%</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr>
+<td>2025-12</td>
+<td style="text-align: right;">297</td>
+<td style="text-align: right;">71,4%</td>
+<td style="text-align: right;">66,0%</td>
+<td style="text-align: right;">55,2%</td>
+<td style="text-align: right;">50,8%</td>
+<td style="text-align: right;">—</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="2">Таблица 2. Конверсии переходов и сквозные конверсии</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Переход</th>
+<th style="text-align: right;">Конверсия перехода, среднее по когортам</th>
+<th style="text-align: right;">Наименьшее</th>
+<th style="text-align: right;">Наибольшее</th>
+<th style="text-align: right;">Когорт</th>
+<th style="text-align: right;">Сквозная конверсия от месяца 1, среднее</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Месяц 1 → месяц 2</td>
+<td style="text-align: right;">82,5%</td>
+<td style="text-align: right;">70,2%</td>
+<td style="text-align: right;">90,5%</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">82,5%</td>
+</tr>
+<tr>
+<td>Месяц 2 → месяц 3</td>
+<td style="text-align: right;">90,7%</td>
+<td style="text-align: right;">75,4%</td>
+<td style="text-align: right;">93,9%</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">74,7%</td>
+</tr>
+<tr>
+<td>Месяц 3 → месяц 4</td>
+<td style="text-align: right;">92,8%</td>
+<td style="text-align: right;">78,6%</td>
+<td style="text-align: right;">96,4%</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">69,4%</td>
+</tr>
+<tr>
+<td>Месяц 4 → месяц 5</td>
+<td style="text-align: right;">95,1%</td>
+<td style="text-align: right;">81,3%</td>
+<td style="text-align: right;">98,9%</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">65,9%</td>
+</tr>
+<tr>
+<td>Месяц 5 → месяц 6</td>
+<td style="text-align: right;">95,0%</td>
+<td style="text-align: right;">75,9%</td>
+<td style="text-align: right;">99,6%</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">62,4%</td>
+</tr>
+<tr>
+<td>Месяц 6 → месяц 7</td>
+<td style="text-align: right;">95,4%</td>
+<td style="text-align: right;">75,8%</td>
+<td style="text-align: right;">99,4%</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">59,3%</td>
+</tr>
+<tr>
+<td>Месяц 7 → месяц 8</td>
+<td style="text-align: right;">95,4%</td>
+<td style="text-align: right;">77,6%</td>
+<td style="text-align: right;">98,8%</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">56,4%</td>
+</tr>
+<tr>
+<td>Месяц 8 → месяц 9</td>
+<td style="text-align: right;">96,4%</td>
+<td style="text-align: right;">79,2%</td>
+<td style="text-align: right;">100,0%</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">54,2%</td>
+</tr>
+<tr>
+<td>Месяц 9 → месяц 10</td>
+<td style="text-align: right;">97,9%</td>
+<td style="text-align: right;">95,3%</td>
+<td style="text-align: right;">100,0%</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">53,3%</td>
+</tr>
+<tr>
+<td>Месяц 10 → месяц 11</td>
+<td style="text-align: right;">98,6%</td>
+<td style="text-align: right;">96,9%</td>
+<td style="text-align: right;">100,0%</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">52,7%</td>
+</tr>
+<tr>
+<td>Месяц 11 → месяц 12</td>
+<td style="text-align: right;">98,5%</td>
+<td style="text-align: right;">95,7%</td>
+<td style="text-align: right;">100,0%</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">51,8%</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="3-2025">Таблица 3. Отклонение когорт, у которых месяц жизни приходится на сентябрь 2025 года</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Переход</th>
+<th>Когорта</th>
+<th style="text-align: right;">Конверсия этой когорты</th>
+<th style="text-align: right;">Среднее по остальным когортам того же возраста</th>
+<th style="text-align: right;">Следующий переход этой же когорты</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Месяц 2 → месяц 3</td>
+<td>2025-07</td>
+<td style="text-align: right;">75,4%</td>
+<td style="text-align: right;">92,0%</td>
+<td style="text-align: right;">93,1%</td>
+</tr>
+<tr>
+<td>Месяц 3 → месяц 4</td>
+<td>2025-06</td>
+<td style="text-align: right;">78,6%</td>
+<td style="text-align: right;">94,1%</td>
+<td style="text-align: right;">96,0%</td>
+</tr>
+<tr>
+<td>Месяц 4 → месяц 5</td>
+<td>2025-05</td>
+<td style="text-align: right;">81,3%</td>
+<td style="text-align: right;">96,4%</td>
+<td style="text-align: right;">94,6%</td>
+</tr>
+<tr>
+<td>Месяц 5 → месяц 6</td>
+<td>2025-04</td>
+<td style="text-align: right;">75,9%</td>
+<td style="text-align: right;">96,7%</td>
+<td style="text-align: right;">95,8%</td>
+</tr>
+<tr>
+<td>Месяц 6 → месяц 7</td>
+<td>2025-03</td>
+<td style="text-align: right;">75,8%</td>
+<td style="text-align: right;">97,2%</td>
+<td style="text-align: right;">96,6%</td>
+</tr>
+<tr>
+<td>Месяц 7 → месяц 8</td>
+<td>2025-02</td>
+<td style="text-align: right;">77,6%</td>
+<td style="text-align: right;">97,1%</td>
+<td style="text-align: right;">95,9%</td>
+</tr>
+<tr>
+<td>Месяц 8 → месяц 9</td>
+<td>2025-01</td>
+<td style="text-align: right;">79,3%</td>
+<td style="text-align: right;">97,9%</td>
+<td style="text-align: right;">98,8%</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="_1">Факты</h2>
+<ol>
+<li>По сумме клиентов удержание составляет: месяц 2 — 82,7%, месяц 3 — 74,9%, месяц 6 — 62,4%, месяц 9 — 54,1%. У девяти зрелых когорт месяц 12 — 51,8% (1 458 клиентов из 2 817).</li>
+<li>Наибольшая потеря — на переходе от первого месяца ко второму: 637 клиентов из 3 684 (17,3%). На переходе от второго к третьему — ещё 289 клиентов.</li>
+<li>После третьего месяца ежемесячная потеря снижается: от 7,2% на переходе 3 → 4 до 1,4–2,1% на переходах после девятого месяца.</li>
+<li>Размер когорты — от 284 клиентов (сентябрь) до 341 клиента (август).</li>
+<li>Сквозное удержание к девятому месяцу у всех когорт находится в узком диапазоне: от 50,8% (декабрь) до 56,3% (сентябрь).</li>
+<li>Сквозное удержание к двенадцатому месяцу у девяти зрелых когорт: от 47,5% (апрель) до 55,2% (май).</li>
+</ol>
+<h2 id="_2">Закономерности</h2>
+<ol>
+<li>Удержание падает неравномерно: основной отток приходится на первые три месяца, затем кривая выполаживается.</li>
+<li>Ранние и поздние когорты различаются на втором, третьем и шестом месяцах, но к девятому месяцу различия почти исчезают: среднее по когортам января–июня — 54,6%, июля–декабря — 53,7%.</li>
+<li>Конверсия первого перехода у когорт января–июля — от 87,1% до 90,5%, у когорт августа–декабря — от 70,2% до 75,4%. Разрыв начинается с когорты августа.</li>
+<li>Для каждого возраста перехода от второго к третьему и до восьмого к девятому ровно одна когорта показывает низкую конверсию: та, у которой этот месяц жизни приходится на сентябрь 2025 года. У неё 75,4–81,3%, у остальных когорт того же возраста — 92,0–97,9%.</li>
+<li>Следующий переход у этих же когорт возвращается к обычному уровню: 93,1–98,8%. То есть отклонение приходится на один месяц жизни, а не сохраняется на всех последующих.</li>
+</ol>
+<h2 id="_3">Отклонения</h2>
+<ol>
+<li>Сентябрь 2025 года: у семи когорт конверсия перехода, попавшего на этот месяц, ниже среднего по остальным когортам того же возраста на 15,1–21,5 процентного пункта (когорты января–июля).</li>
+<li>Август 2025 года: когорта августа имеет конверсию первого перехода 75,4% против 87,1–90,5% у когорт января–июля.</li>
+<li>Ноябрь 2025 года: наименьшее удержание на третьем месяце — 64,6% (у марта — 83,8%).</li>
+<li>Апрель 2025 года: наименьшее удержание на двенадцатом месяце — 47,5% (у мая — 55,2%).</li>
+<li>Май 2025 года: наибольшее удержание на втором месяце — 90,5%.</li>
+<li>Сентябрь 2025 года: наименьший размер когорты — 284 клиента.</li>
+<li>Когорты октября, ноября и декабря не имеют значений десятого, одиннадцатого и двенадцатого месяцев, поэтому сравнение по этим месяцам проведено на 11, 10 и 9 когортах соответственно.</li>
+</ol>
+<nav class="pager" aria-label="Навигация по страницам"><a class="pager-prev" href="../artifacts/02a-analiz-non-clients.html"><span>Назад</span>02. Отказы</a><a class="pager-next" href="../artifacts/04a-analiz-features.html"><span>Далее</span>04. Функции</a></nav></article>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Учебный кейс 4 · анализ продукта «Закупки» за 2025 год · данные обезличены.</p>
+    <p>Собрано статически из Markdown: <code>python build.py</code>.</p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Анализ файла features.csv · Карта проекта</title>
+<meta name="description" content="Adoption ключевых функций: запуски в середине года, рост и обрывы.">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark"></span>
+      <span class="brand-text">Карта проекта<small>Закупки · медицинские учреждения</small></span>
+    </a>
+    <nav class="top-nav" aria-label="Разделы"><a href="../index.html#analysis">Анализ</a><a href="../index.html#result">Результат</a><a href="../index.html#data">Данные</a></nav>
+  </div>
+</header>
+<main class="wrap">
+<nav class="crumbs" aria-label="Хлебные крошки"><a href="../index.html">Главная</a><span>/</span><a href="../index.html#analysis">Анализ данных</a><span>/</span><span>04. Функции</span></nav>
+<article class="prose">
+<h1 id="featurescsv">Анализ файла features.csv</h1>
+<p><strong>Что в файле:</strong> 16 функций, значения — доля клиентской базы, использующей функцию, в процентах за каждый месяц 2025 года. Пустая ячейка означает месяц до запуска функции, а не ноль. Среднее рассчитано только по месяцам наличия. Названия в таблице сокращены, полные — в файле.</p>
+<h2 id="1">Таблица 1. Все функции: среднее, границы периода и изменения</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Функция</th>
+<th style="text-align: right;">Среднее</th>
+<th style="text-align: right;">Месяцев</th>
+<th style="text-align: right;">Первый месяц</th>
+<th style="text-align: right;">Последний месяц</th>
+<th style="text-align: right;">Изменение за период</th>
+<th style="text-align: right;">Отношение последнего к первому</th>
+<th style="text-align: right;">Наибольшее падение за месяц</th>
+<th>Месяц падения</th>
+<th style="text-align: right;">Среднее месячное изменение по модулю</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Поиск закупок</td>
+<td style="text-align: right;">91,2%</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">93,4%</td>
+<td style="text-align: right;">90,5%</td>
+<td style="text-align: right;">−2,9 процентного пункта</td>
+<td style="text-align: right;">96,9%</td>
+<td style="text-align: right;">−2,9</td>
+<td>ноябрь</td>
+<td style="text-align: right;">2,6</td>
+</tr>
+<tr>
+<td>Карточка закупки</td>
+<td style="text-align: right;">84,8%</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">85,8%</td>
+<td style="text-align: right;">83,6%</td>
+<td style="text-align: right;">−2,2</td>
+<td style="text-align: right;">97,4%</td>
+<td style="text-align: right;">−2,7</td>
+<td>март</td>
+<td style="text-align: right;">2,6</td>
+</tr>
+<tr>
+<td>Фильтры</td>
+<td style="text-align: right;">70,5%</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">71,8%</td>
+<td style="text-align: right;">74,2%</td>
+<td style="text-align: right;">+2,4</td>
+<td style="text-align: right;">103,3%</td>
+<td style="text-align: right;">−3,0</td>
+<td>март</td>
+<td style="text-align: right;">2,6</td>
+</tr>
+<tr>
+<td>Шаблоны и автоматические уведомления</td>
+<td style="text-align: right;">65,7%</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">79,6%</td>
+<td style="text-align: right;">54,0%</td>
+<td style="text-align: right;">−25,6</td>
+<td style="text-align: right;">67,8%</td>
+<td style="text-align: right;">−22,1</td>
+<td>июнь</td>
+<td style="text-align: right;">3,9</td>
+</tr>
+<tr>
+<td>Избранное и метки</td>
+<td style="text-align: right;">64,6%</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">64,5%</td>
+<td style="text-align: right;">63,5%</td>
+<td style="text-align: right;">−1,0</td>
+<td style="text-align: right;">98,4%</td>
+<td style="text-align: right;">−2,6</td>
+<td>август</td>
+<td style="text-align: right;">2,5</td>
+</tr>
+<tr>
+<td>Выгрузка в Excel и интеграция</td>
+<td style="text-align: right;">55,9%</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">56,9%</td>
+<td style="text-align: right;">54,8%</td>
+<td style="text-align: right;">−2,1</td>
+<td style="text-align: right;">96,3%</td>
+<td style="text-align: right;">−2,7</td>
+<td>октябрь</td>
+<td style="text-align: right;">2,4</td>
+</tr>
+<tr>
+<td>Уведомления о важных датах</td>
+<td style="text-align: right;">52,9%</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">51,0%</td>
+<td style="text-align: right;">52,5%</td>
+<td style="text-align: right;">+1,5</td>
+<td style="text-align: right;">102,9%</td>
+<td style="text-align: right;">−2,9</td>
+<td>декабрь</td>
+<td style="text-align: right;">2,4</td>
+</tr>
+<tr>
+<td>Аналитика заказчика</td>
+<td style="text-align: right;">41,6%</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">40,2%</td>
+<td style="text-align: right;">42,0%</td>
+<td style="text-align: right;">+1,8</td>
+<td style="text-align: right;">104,5%</td>
+<td style="text-align: right;">−2,9</td>
+<td>апрель</td>
+<td style="text-align: right;">2,5</td>
+</tr>
+<tr>
+<td>Доска задач</td>
+<td style="text-align: right;">29,7%</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">29,6%</td>
+<td style="text-align: right;">28,7%</td>
+<td style="text-align: right;">−0,9</td>
+<td style="text-align: right;">97,0%</td>
+<td style="text-align: right;">−2,6</td>
+<td>март</td>
+<td style="text-align: right;">2,4</td>
+</tr>
+<tr>
+<td>Поиск с искусственным интеллектом</td>
+<td style="text-align: right;">23,0%</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">22,4%</td>
+<td style="text-align: right;">21,0%</td>
+<td style="text-align: right;">−1,4</td>
+<td style="text-align: right;">93,8%</td>
+<td style="text-align: right;">−2,9</td>
+<td>октябрь</td>
+<td style="text-align: right;">2,4</td>
+</tr>
+<tr>
+<td>Мобильная версия</td>
+<td style="text-align: right;">16,1%</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">16,4%</td>
+<td style="text-align: right;">14,3%</td>
+<td style="text-align: right;">−2,1</td>
+<td style="text-align: right;">87,2%</td>
+<td style="text-align: right;">−2,8</td>
+<td>март</td>
+<td style="text-align: right;">2,5</td>
+</tr>
+<tr>
+<td>Командная работа</td>
+<td style="text-align: right;">15,2%</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">16,3%</td>
+<td style="text-align: right;">14,2%</td>
+<td style="text-align: right;">−2,1</td>
+<td style="text-align: right;">87,1%</td>
+<td style="text-align: right;">−2,1</td>
+<td>декабрь</td>
+<td style="text-align: right;">2,1</td>
+</tr>
+<tr>
+<td>Согласование участия</td>
+<td style="text-align: right;">13,0%</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">10,9%</td>
+<td style="text-align: right;">10,8%</td>
+<td style="text-align: right;">−0,1</td>
+<td style="text-align: right;">99,1%</td>
+<td style="text-align: right;">−3,0</td>
+<td>ноябрь</td>
+<td style="text-align: right;">2,8</td>
+</tr>
+<tr>
+<td>Интеграция через программный интерфейс</td>
+<td style="text-align: right;">8,0%</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">9,8%</td>
+<td style="text-align: right;">6,0%</td>
+<td style="text-align: right;">−3,8</td>
+<td style="text-align: right;">61,2%</td>
+<td style="text-align: right;">−2,9</td>
+<td>июнь</td>
+<td style="text-align: right;">2,4</td>
+</tr>
+<tr>
+<td>Банковские гарантии</td>
+<td style="text-align: right;">4,6%</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">4,4%</td>
+<td style="text-align: right;">2,8%</td>
+<td style="text-align: right;">−1,6</td>
+<td style="text-align: right;">63,6%</td>
+<td style="text-align: right;">−2,8</td>
+<td>июнь</td>
+<td style="text-align: right;">2,4</td>
+</tr>
+<tr>
+<td>Поиск в Белоруссии и Казахстане</td>
+<td style="text-align: right;">2,8%</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">4,1%</td>
+<td style="text-align: right;">1,2%</td>
+<td style="text-align: right;">−2,9</td>
+<td style="text-align: right;">29,3%</td>
+<td style="text-align: right;">−3,0</td>
+<td>октябрь</td>
+<td style="text-align: right;">2,5</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="2">Таблица 2. Переходы по месяцам для функций с наибольшими изменениями</h2>
+<p>Значения — изменение к предыдущему месяцу в процентных пунктах; последний столбец — сквозное отношение декабря к первому месяцу наличия.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Функция</th>
+<th style="text-align: right;">Февраль</th>
+<th style="text-align: right;">Март</th>
+<th style="text-align: right;">Апрель</th>
+<th style="text-align: right;">Май</th>
+<th style="text-align: right;">Июнь</th>
+<th style="text-align: right;">Июль</th>
+<th style="text-align: right;">Август</th>
+<th style="text-align: right;">Сентябрь</th>
+<th style="text-align: right;">Октябрь</th>
+<th style="text-align: right;">Ноябрь</th>
+<th style="text-align: right;">Декабрь</th>
+<th style="text-align: right;">Сквозное отношение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Шаблоны и автоматические уведомления</td>
+<td style="text-align: right;">+2,2</td>
+<td style="text-align: right;">−2,6</td>
+<td style="text-align: right;">+2,9</td>
+<td style="text-align: right;">−2,6</td>
+<td style="text-align: right;">−22,1</td>
+<td style="text-align: right;">−1,7</td>
+<td style="text-align: right;">+1,7</td>
+<td style="text-align: right;">−1,5</td>
+<td style="text-align: right;">−2,0</td>
+<td style="text-align: right;">−1,6</td>
+<td style="text-align: right;">+1,7</td>
+<td style="text-align: right;">67,8%</td>
+</tr>
+<tr>
+<td>Согласование участия</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">+2,6</td>
+<td style="text-align: right;">+3,0</td>
+<td style="text-align: right;">−3,0</td>
+<td style="text-align: right;">−2,7</td>
+<td style="text-align: right;">99,1%</td>
+</tr>
+<tr>
+<td>Поиск с искусственным интеллектом</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">+2,5</td>
+<td style="text-align: right;">−2,3</td>
+<td style="text-align: right;">+2,0</td>
+<td style="text-align: right;">−2,9</td>
+<td style="text-align: right;">+2,1</td>
+<td style="text-align: right;">−2,8</td>
+<td style="text-align: right;">93,8%</td>
+</tr>
+<tr>
+<td>Интеграция через программный интерфейс</td>
+<td style="text-align: right;">+2,4</td>
+<td style="text-align: right;">−2,6</td>
+<td style="text-align: right;">+2,5</td>
+<td style="text-align: right;">−2,1</td>
+<td style="text-align: right;">−2,9</td>
+<td style="text-align: right;">−2,6</td>
+<td style="text-align: right;">+2,1</td>
+<td style="text-align: right;">−2,8</td>
+<td style="text-align: right;">+2,2</td>
+<td style="text-align: right;">+2,1</td>
+<td style="text-align: right;">−2,1</td>
+<td style="text-align: right;">61,2%</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="_1">Факты</h2>
+<ol>
+<li>В файле 16 функций. У 12 функций данные за все 12 месяцев, у аналитики заказчика — за 11 месяцев (с февраля), у поиска с искусственным интеллектом — за 7 месяцев (с июня), у согласования участия — за 5 месяцев (с августа), у командной работы — за 2 месяца (с ноября).</li>
+<li>Средняя доля использования лежит в диапазоне от 2,8% до 91,2%.</li>
+<li>Выше 60% — пять функций: поиск закупок, карточка закупки, фильтры, шаблоны, избранное и метки.</li>
+<li>Ниже 30% — восемь функций: доска задач, поиск с искусственным интеллектом, мобильная версия, командная работа, согласование участия, интеграция через программный интерфейс, банковские гарантии, поиск в Белоруссии и Казахстане.</li>
+<li>Ниже 10% — три функции: интеграция через программный интерфейс 8,0%, банковские гарантии 4,6%, поиск в Белоруссии и Казахстане 2,8%.</li>
+<li>Из 12 функций с полным годом выросли две: фильтры (+2,4 процентного пункта) и уведомления о важных датах (+1,5). Остальные десять снизились.</li>
+<li>Наибольшее месячное падение среди всех функций — у шаблонов в июне: −22,1 процентного пункта. Следующее по величине месячное падение — −3,0 процентного пункта.</li>
+<li>Порядок первых трёх функций не менялся ни в одном месяце: поиск закупок, карточка закупки, фильтры. Состав последних трёх функций тоже не менялся: поиск в Белоруссии и Казахстане, банковские гарантии, интеграция через программный интерфейс; их порядок между собой меняется.</li>
+</ol>
+<h2 id="_2">Закономерности</h2>
+<ol>
+<li>У 15 функций среднее месячное изменение по модулю находится в диапазоне 2,1–2,8 процентного пункта; у шаблонов — 3,9. То есть значения меняются плавно, кроме одного разрыва.</li>
+<li>Шаблоны до июня находились в диапазоне 79,2–82,1%, после июня — в диапазоне 52,3–57,4%. Ни в один месяц после июня значение не превысило 57,4%.</li>
+<li>Поиск закупок и карточка закупки снижаются постепенно: с 93,4% до 90,5% и с 85,8% до 83,6%.</li>
+<li>Фильтры и аналитика заказчика растут: с 71,8% до 74,2% и с 40,2% до 42,0%; максимум аналитики — 44,1% в ноябре.</li>
+<li>Функции, запущенные в течение года, не растут после запуска: поиск с искусственным интеллектом 22,4% в июне и 21,0% в декабре; согласование участия 10,9% в августе, максимум 16,5% в октябре, 10,8% в декабре; командная работа 16,3% в ноябре и 14,2% в декабре.</li>
+</ol>
+<h2 id="_3">Отклонения</h2>
+<ol>
+<li>Июнь: шаблоны теряют 22,1 процентного пункта за один месяц (79,5% → 57,4%).</li>
+<li>Октябрь: согласование участия достигает максимума 16,5%, затем теряет 3,0 и 2,7 процентного пункта и возвращается к 10,8%.</li>
+<li>Сентябрь: интеграция через программный интерфейс достигает минимума 3,8%, затем к ноябрю вырастает до 8,1% и в декабре снижается до 6,0%.</li>
+<li>Банковские гарантии: минимум 1,8% в феврале, максимум 7,4% в августе, размах 5,6 процентного пункта.</li>
+<li>Поиск в Белоруссии и Казахстане: минимум 1,2% в феврале и декабре, максимум 4,6% в сентябре.</li>
+<li>Ноябрь: минимум поиска закупок за год — 88,5%.</li>
+<li>Декабрь: максимум фильтров за год — 74,2%.</li>
+<li>Пересечение формулировок в файле: строка «Избранное, метки и доска задач» (64,6%) и отдельная строка «Доска задач» (29,7%); строка «Выгрузка данных в Excel и интеграция с системой управления взаимоотношениями с клиентами» (55,9%) и отдельная строка «Интеграция с системой управления взаимоотношениями с клиентами через программный интерфейс» (8,0%). Значения этих строк нельзя складывать или сравнивать напрямую.</li>
+</ol>
+<nav class="pager" aria-label="Навигация по страницам"><a class="pager-prev" href="../artifacts/03a-analiz-retention.html"><span>Назад</span>03. Удержание</a><a class="pager-next" href="../artifacts/05a-analiz-user-flow.html"><span>Далее</span>05. Сценарий</a></nav></article>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Учебный кейс 4 · анализ продукта «Закупки» за 2025 год · данные обезличены.</p>
+    <p>Собрано статически из Markdown: <code>python build.py</code>.</p>
+  </div>
+</footer>
+</body>
+</html>

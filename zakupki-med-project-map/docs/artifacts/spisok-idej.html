@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Инициативы развития «Закупок» для медицинских учреждений · Карта проекта</title>
+<meta name="description" content="15 сырых идей, отсев по данным, приоритетные и отклонённые.">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark"></span>
+      <span class="brand-text">Карта проекта<small>Закупки · медицинские учреждения</small></span>
+    </a>
+    <nav class="top-nav" aria-label="Разделы"><a href="../index.html#analysis">Анализ</a><a href="../index.html#result">Результат</a><a href="../index.html#data">Данные</a></nav>
+  </div>
+</header>
+<main class="wrap">
+<nav class="crumbs" aria-label="Хлебные крошки"><a href="../index.html">Главная</a><span>/</span><a href="../index.html#result">Результат: инициативы и эффект</a><span>/</span><span>Идеи</span></nav>
+<article class="prose">
+<h1 id="_1">Инициативы развития «Закупок» для медицинских учреждений</h1>
+<p><strong>Рамка.</strong> Цель — рост потенциально монетизируемой ценности на 20%. В файлах нет денежных величин: в <a href="../data/sales.csv"><code>sales.csv</code></a> (строка 1) только счётчики этапов, цен и сумм нет. Поэтому эффект ниже выражен в счётчиках и процентных пунктах, а не в рублях. <strong>Допущение:</strong> монетизируемая ценность растёт через три рычага — число первых оплат (244 за 2025 год, <a href="../data/sales.csv"><code>sales.csv</code></a>, строки 2–13, столбец F), переход на старший тариф или подключение модуля и продление (удержание к 12-му месяцу 51,8%, <a href="../data/retention.csv"><code>retention.csv</code></a>, строки 2–10, столбец M).</p>
+<h2 id="1">1. Причины потери ценности, прошедшие проверку данными</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Причина</th>
+<th>Подтверждение</th>
+<th>Источник</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>П1. Согласование закрыто тарифом</strong></td>
+<td>6 из 30 обращений; 3 из 16 непришедших; 4 из 16 действующих; шаг 56,7%, −9,8 процентного пункта между полугодиями; использование 13,0%</td>
+<td><a href="../data/support.txt"><code>support.txt</code></a> 14–15, 34–35, 50–51, 70–71, 86–87, 106–107; <a href="../data/non_clients.txt"><code>non_clients.txt</code></a> 21, 57, 93; <a href="../data/loyal_feedback.txt"><code>loyal_feedback.txt</code></a> 39, 79, 87, 127; <a href="../data/user_flow.csv"><code>user_flow.csv</code></a> строка 8, столбцы B–M; <a href="../data/features.csv"><code>features.csv</code></a> строка 11</td>
+</tr>
+<tr>
+<td><strong>П2. Нет отраслевых классификаторов</strong></td>
+<td>4 из 30; 3 из 16; 4 из 16 действующих чистят выдачу вручную; шаг настройки 78,2%, потеря 19,5 процентного пункта — крупнейшая</td>
+<td><a href="../data/support.txt"><code>support.txt</code></a> 6–7, 42–43, 78–79, 118–119; <a href="../data/non_clients.txt"><code>non_clients.txt</code></a> 3, 39, 75; <a href="../data/loyal_feedback.txt"><code>loyal_feedback.txt</code></a> 23, 55, 103, 119; <a href="../data/user_flow.csv"><code>user_flow.csv</code></a> строка 3; <a href="05a-analiz-user-flow.html"><code>05a-analiz-user-flow.md</code></a>, таблица 2</td>
+</tr>
+<tr>
+<td><strong>П3. Лимиты меток и шаблонов</strong></td>
+<td>метки: 3 из 30 и 2 из 16; шаблоны: 4 из 16; избранное 64,6%, шаблоны 65,7%</td>
+<td><a href="../data/support.txt"><code>support.txt</code></a> 10–11, 46–47, 82–83; <a href="../data/non_clients.txt"><code>non_clients.txt</code></a> 27, 63; <a href="../data/loyal_feedback.txt"><code>loyal_feedback.txt</code></a> 5, 63, 95, 119; <a href="../data/features.csv"><code>features.csv</code></a> строки 4, 6</td>
+</tr>
+<tr>
+<td><strong>П4. Аналитика перегружена или закрыта тарифом</strong></td>
+<td>3 + 3 из 30; использование 41,6%; шаг анализа 71,2%, потеря 15,1 процентного пункта</td>
+<td><a href="../data/support.txt"><code>support.txt</code></a> 2–3, 30–31, 38–39, 66–67, 74–75, 102–103; <a href="../data/features.csv"><code>features.csv</code></a> строка 9; <a href="../data/user_flow.csv"><code>user_flow.csv</code></a> строка 6</td>
+</tr>
+<tr>
+<td><strong>П5. Ненадёжность сервиса</strong></td>
+<td>4 из 30; у семи когорт провал 15,1–21,5 процентного пункта ровно в сентябре; потеря 17,3% на переходе 1→2</td>
+<td><a href="../data/support.txt"><code>support.txt</code></a> 26–27, 62–63, 98–99, 114–115; <a href="../data/retention.csv"><code>retention.csv</code></a> строки 2–8; <a href="03a-analiz-retention.html"><code>03a-analiz-retention.md</code></a>, таблица 3</td>
+</tr>
+<tr>
+<td><strong>П6. Продление и невидимая ценность нового</strong></td>
+<td>5 из 30 прямо отказываются продлевать; удержание 51,8% к 12-му месяцу; новые функции 13,0–23,0%</td>
+<td><a href="../data/support.txt"><code>support.txt</code></a> 5, 14, 19, 23, 26; <a href="06a-analiz-support.html"><code>06a-analiz-support.md</code></a>, факт 5; <a href="../data/retention.csv"><code>retention.csv</code></a> строки 2–10, столбец M; <a href="../data/features.csv"><code>features.csv</code></a> строки 10–12</td>
+</tr>
+<tr>
+<td><strong>П7. Смена ответственного сотрудника</strong></td>
+<td>4 из 30</td>
+<td><a href="../data/support.txt"><code>support.txt</code></a> 22–23, 58–59, 94–95, 110–111; в <a href="../data/retention.csv"><code>retention.csv</code></a> нет поля причины — эффект не измерен</td>
+</tr>
+<tr>
+<td><strong>П8. Упаковка тарифа</strong></td>
+<td>8 из 16 отказов из-за цены пакета; переход демо→счёт 37,6%, 43,1% → 32,2% по полугодиям</td>
+<td><a href="../data/non_clients.txt"><code>non_clients.txt</code></a> 9, 15, 33, 45, 51, 69, 81, 87; <a href="../data/sales.csv"><code>sales.csv</code></a> строки 2–13, столбцы D–E</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="2-15">2. Сырые идеи (15)</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>№</th>
+<th>Идея</th>
+<th>Причина</th>
+<th>Источник</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Внешний согласующий без учётной записи: комментарий, а не только кнопка</td>
+<td>П1</td>
+<td><a href="../data/loyal_feedback.txt"><code>loyal_feedback.txt</code></a> 39, 79, 87, 127; <a href="../data/non_clients.txt"><code>non_clients.txt</code></a> 21, 93</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Согласование в младшем тарифе или отдельным модулем</td>
+<td>П1, П8</td>
+<td><a href="../data/support.txt"><code>support.txt</code></a> 14–15, 86–87; <a href="../data/non_clients.txt"><code>non_clients.txt</code></a> 57</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Фильтры по классификатору товаров, работ и услуг, общероссийскому классификатору продукции и регистрационному удостоверению</td>
+<td>П2</td>
+<td><a href="../data/support.txt"><code>support.txt</code></a> 6–7, 42–43; <a href="../data/non_clients.txt"><code>non_clients.txt</code></a> 3, 39, 75</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Отраслевой словарь и автоочистка выдачи от ремонта, питания, услуг</td>
+<td>П2</td>
+<td><a href="../data/loyal_feedback.txt"><code>loyal_feedback.txt</code></a> 23, 55, 103, 119</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Расширить лимит меток</td>
+<td>П3</td>
+<td><a href="../data/support.txt"><code>support.txt</code></a> 10–11, 46–47, 82–83; <a href="../data/non_clients.txt"><code>non_clients.txt</code></a> 27</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Расширить лимит шаблонов</td>
+<td>П3</td>
+<td><a href="../data/loyal_feedback.txt"><code>loyal_feedback.txt</code></a> 5, 63, 95, 119</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Аналитика в один клик: процент снижения и «Светофор» на первом экране</td>
+<td>П4</td>
+<td><a href="../data/support.txt"><code>support.txt</code></a> 2–3, 38–39, 74–75</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Аналитика отдельным модулем на любом тарифе</td>
+<td>П4, П8</td>
+<td><a href="../data/support.txt"><code>support.txt</code></a> 30–31, 66–67, 102–103; <a href="../data/non_clients.txt"><code>non_clients.txt</code></a> 51</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Конструктор тарифа из поиска, согласования и аналитики</td>
+<td>П8</td>
+<td><a href="../data/non_clients.txt"><code>non_clients.txt</code></a> 9, 15, 33, 45, 69, 81, 87</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Гарантия доступности, статус-страница, компенсация при сбое</td>
+<td>П5</td>
+<td><a href="../data/support.txt"><code>support.txt</code></a> 26–27, 62–63, 98–99, 114–115</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Автопродление и напоминания</td>
+<td>П6</td>
+<td><a href="../data/support.txt"><code>support.txt</code></a> 18–19, 54–55, 90–91</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Онбординг новых функций и отчёт о ценности перед продлением</td>
+<td>П6</td>
+<td><a href="../data/support.txt"><code>support.txt</code></a> 18–19, 54–55; <a href="../data/features.csv"><code>features.csv</code></a> строки 10–12</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Передача дел при смене сотрудника</td>
+<td>П7</td>
+<td><a href="../data/support.txt"><code>support.txt</code></a> 22–23, 58–59, 94–95, 110–111</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Программный интерфейс к системам учёта</td>
+<td>нет подтверждённой потери</td>
+<td><a href="../data/loyal_feedback.txt"><code>loyal_feedback.txt</code></a> 15, 47, 79, 111; <a href="../data/features.csv"><code>features.csv</code></a> строка 14 (8,0%)</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Мобильная версия</td>
+<td>нет подтверждённой потери</td>
+<td><a href="../data/loyal_feedback.txt"><code>loyal_feedback.txt</code></a> 7, 39, 63, 95, 119, 127; <a href="../data/features.csv"><code>features.csv</code></a> строка 15 (16,1%)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="3">3. Отсев</h2>
+<p><strong>Критерии:</strong> причина подтверждена минимум двумя независимыми источниками или метрикой; инициатива меняет шаг сценария, конверсию или удержание, а не только удовлетворённость; нет зависимости от данных, которых нет; это не функция «на всякий случай».</p>
+<p><strong>Прошли:</strong> 1+2, 3+4, 5+6, 7, 8+9, 10, 11+12. <strong>Отклонены:</strong> 13 (в <a href="../data/retention.csv"><code>retention.csv</code></a> нет причины ухода — эффект не проверить), 14 и 15 (причина внешняя: нет лицензий, нет профильных специалистов, документы читают за компьютером).</p>
+<h2 id="4">4. Приоритетные инициативы</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Волна</th>
+<th>Инициатива</th>
+<th>Гипотеза влияния на метрику</th>
+<th>Что проверяем</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>И1. Гибкое согласование:</strong> внешний согласующий без учётной записи + согласование модулем на младшем тарифе (идеи 1+2)</td>
+<td>Шаг согласования вырастет выше 56,7% (<a href="../data/user_flow.csv"><code>user_flow.csv</code></a> строка 8), использование функции — выше 13,0% (<a href="../data/features.csv"><code>features.csv</code></a> строка 11); уйдёт часть 3 из 16 отказов из-за тарифной стены. Размер прироста не оцениваем — эксперимента в файлах нет</td>
+<td>шаг 7, доля подключивших модуль, отказы «нет на тарифе»</td>
+</tr>
+<tr>
+<td>1</td>
+<td><strong>И2. Отраслевые классификаторы и очистка выдачи</strong> (3+4)</td>
+<td>Сократится потеря на шаге настройки 19,5 процентного пункта (<a href="../data/user_flow.csv"><code>user_flow.csv</code></a> строка 3; <code>05a</code>, таблица 2); вернутся часть 3 из 16, ушедших к конкурентам с классификаторами; снизится ручная чистка у 4 из 16 действующих. На публичной странице в перечне фильтров классификатор товаров и регистрационное удостоверение не указаны, код общероссийского классификатора продукции ищется только как ключевое слово (<code>zakupki.kontur.ru/site</code>, раздел «По каким параметрам можно искать»)</td>
+<td>шаг 2, доля запросов с классификатором, доля ручных исключений</td>
+</tr>
+<tr>
+<td>1</td>
+<td><strong>И3. Модульная упаковка:</strong> аналитика и согласование отдельными модулями, конструктор тарифа (8+9)</td>
+<td>Снимется главный барьер перехода демо→счёт (37,6%, <a href="../data/sales.csv"><code>sales.csv</code></a> строки 2–13, столбцы D–E) и часть 8 из 16 отказов по цене пакета; появится допродажа без смены тарифа. <strong>Допущение:</strong> модульная цена не ниже текущей маржи — это проверяется финансовой моделью, которой в файлах нет</td>
+<td>конверсия демо→счёт, доля модульных продаж, число модулей на клиента</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>И4. Лимиты меток и шаблонов</strong> (5+6)</td>
+<td>Избранное (64,6%) и шаблоны (65,7%) перестанут упираться в потолок (<a href="../data/features.csv"><code>features.csv</code></a> строки 6, 4); уйдёт причина 2 из 16 отказов (<a href="../data/non_clients.txt"><code>non_clients.txt</code></a> 27, 63). Отдельно: июньский обрыв шаблонов на 22,1 процентного пункта (<a href="../data/features.csv"><code>features.csv</code></a> строка 4) требует проверки, не сбой ли это замера</td>
+<td>доля клиентов на пределе лимита, число меток и шаблонов на клиента</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>И5. Аналитика в один клик</strong> (7)</td>
+<td>Сократится потеря на шаге анализа 15,1 процентного пункта (<a href="../data/user_flow.csv"><code>user_flow.csv</code></a> строка 6); вернётся в аналитику часть 6 из 30 жалоб; база использования 41,6% (<a href="../data/features.csv"><code>features.csv</code></a> строка 9)</td>
+<td>шаг 5, доля сессий с просмотром процента снижения и «Светофора»</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>И6. Надёжность и гарантия доступности</strong> (10)</td>
+<td>Уберёт разовые провалы удержания 15,1–21,5 процентного пункта (<a href="../data/retention.csv"><code>retention.csv</code></a> строки 2–8; <code>03a</code>, таблица 3) и снизит потерю первого перехода 17,3% (<a href="../data/retention.csv"><code>retention.csv</code></a> строки 2–13). 4 из 30 — нижняя оценка: в анкетах непришедших и действующих вопрос о сбоях не задавался (<a href="../analysis/kachestvennaya-klasterizaciya.html"><code>kachestvennaya-klasterizaciya.md</code></a>, отклонение 1)</td>
+<td>доступность, число обращений о сбоях, удержание 1→2</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>И7. Автопродление и отчёт о ценности</strong> (11+12)</td>
+<td>Вернёт часть 5 из 30, кто не продлил по забывчивости или не увидел нового (<a href="../data/support.txt"><code>support.txt</code></a> 5, 14, 19, 23, 26); поднимет использование новых функций с 13,0–23,0% (<a href="../data/features.csv"><code>features.csv</code></a> строки 10–12)</td>
+<td>доля автопродлений, продление после отчёта, использование новых функций</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Логика приоритета.</strong> И1 — единственная тема во всех трёх источниках (13 упоминаний из 62) и единственный шаг с устойчивым снижением (<a href="../data/user_flow.csv"><code>user_flow.csv</code></a>, строка 8). И2 — крупнейшая потеря на одном шаге (19,5 процентного пункта). И3 — крупнейший барьер монетизации: 8 из 16 отказов и провал демо→счёт. И6 и И7 — удержание, но И6 дороже и реже, И7 дешевле и лечит симптом, а не причину.</p>
+<h2 id="5">5. Отклонённые идеи</h2>
+<ul>
+<li><strong>Передача дел при смене сотрудника</strong> — 4 из 30, но <a href="../data/retention.csv"><code>retention.csv</code></a> не содержит причины ухода; вернуться, если появится поле причины.</li>
+<li><strong>Программный интерфейс</strong> — 8,0% использования (<a href="../data/features.csv"><code>features.csv</code></a> строка 14), причина внешняя: нет лицензий и профильных специалистов (<a href="../data/loyal_feedback.txt"><code>loyal_feedback.txt</code></a> 15, 47, 79, 111).</li>
+<li><strong>Мобильная версия</strong> — 16,1%, причина внешняя: документы читают за компьютером (<a href="../data/loyal_feedback.txt"><code>loyal_feedback.txt</code></a> 7, 39, 63, 95, 119, 127).</li>
+<li><strong>Поиск по Белоруссии и Казахстану, банковские гарантии</strong> — 2,8% и 4,6%, причины внешние (<a href="../data/loyal_feedback.txt"><code>loyal_feedback.txt</code></a> 23, 55, 87, 119; 31, 71, 103). Ранее отклонены в <a href="../analysis/08a-svyazka-metrik.html"><code>08a-svyazka-metrik.md</code></a>, таблица 3.</li>
+</ul>
+<h2 id="6">6. Допущения и ограничения</h2>
+<ul>
+<li>Денег в файлах нет: цель «+20%» в рублях не проверяется, только через число оплат, долю старших тарифов и продление.</li>
+<li>Доли из текстов — подсчёт записей, а не статистическая оценка (<a href="../analysis/kachestvennaya-klasterizaciya.html"><code>kachestvennaya-klasterizaciya.md</code></a>, ограничения).</li>
+<li>В <a href="../data/retention.csv"><code>retention.csv</code></a> нет причины оттока, в <a href="../data/features.csv"><code>features.csv</code></a> нет разреза по тарифам: связи П1–П6 — гипотезы, подтверждённые совпадением метрик и словами респондентов.</li>
+<li>Прямого показателя доступности нет; П5 оценена косвенно через аномалию удержания.</li>
+<li>Состав тарифов и наличие модификаторов взяты с публичной страницы <code>zakupki.kontur.ru/site</code>; цены в расчёте не использованы, потому что правило требует чисел только из файлов.</li>
+</ul>
+<nav class="pager" aria-label="Навигация по страницам"><a class="pager-prev" href="../analysis/08a-svyazka-metrik.html"><span>Назад</span>Связка метрик</a><a class="pager-next" href="../artifacts/prioritizirovannye-iniciativy.html"><span>Далее</span>Приоритизация</a></nav></article>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Учебный кейс 4 · анализ продукта «Закупки» за 2025 год · данные обезличены.</p>
+    <p>Собрано статически из Markdown: <code>python build.py</code>.</p>
+  </div>
+</footer>
+</body>
+</html>

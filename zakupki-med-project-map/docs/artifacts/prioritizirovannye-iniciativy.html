@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Приоритезированные инициативы «Закупок» по ICE · Карта проекта</title>
+<meta name="description" content="Рейтинг семи инициатив по ICE, волны дорожной карты, чувствительность.">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark"></span>
+      <span class="brand-text">Карта проекта<small>Закупки · медицинские учреждения</small></span>
+    </a>
+    <nav class="top-nav" aria-label="Разделы"><a href="../index.html#analysis">Анализ</a><a href="../index.html#result">Результат</a><a href="../index.html#data">Данные</a></nav>
+  </div>
+</header>
+<main class="wrap">
+<nav class="crumbs" aria-label="Хлебные крошки"><a href="../index.html">Главная</a><span>/</span><a href="../index.html#result">Результат: инициативы и эффект</a><span>/</span><span>Приоритизация</span></nav>
+<article class="prose">
+<h1 id="ice">Приоритезированные инициативы «Закупок» по ICE</h1>
+<p><strong>Дата:</strong> 2 ноября 2026 года.
+<strong>Цель:</strong> рост потенциально монетизируемой ценности на 20%.
+<strong>Метод:</strong> ICE = Impact × Confidence × Ease. Каждый параметр — 1–10, балл — произведение (максимум 1 000).
+<strong>Связь с другими артефактами:</strong> сырые идеи и отсев — <a href="spisok-idej.html"><code>spisok-idej.md</code></a>; количественные проверки — <a href="01a-analiz-sales.html"><code>01a-analiz-sales.md</code></a>, <a href="03a-analiz-retention.html"><code>03a-analiz-retention.md</code></a>, <a href="04a-analiz-features.html"><code>04a-analiz-features.md</code></a>, <a href="05a-analiz-user-flow.html"><code>05a-analiz-user-flow.md</code></a>, <a href="06a-analiz-support.html"><code>06a-analiz-support.md</code></a>, <a href="07a-analiz-loyal-feedback.html"><code>07a-analiz-loyal-feedback.md</code></a>; качественная кластеризация — <a href="../analysis/kachestvennaya-klasterizaciya.html"><code>kachestvennaya-klasterizaciya.md</code></a>.</p>
+<p><strong>Для чего этот документ.</strong> ICE отвечает на вопрос «какую ставку делать сейчас», а не «где самый большой запас». Поэтому упаковка — крупнейший барьер монетизации — не обязана быть первой: у неё низкая уверенность и высокая сложность.</p>
+<h2 id="_1">Шкалы</h2>
+<p><strong>Impact.</strong> 9–10 — прямой удар по монетизации с разрывом 19 и более процентных пунктов или 8 и более из 16 отказов; 7–8 — крупный шаг воронки или удержание 12–18 процентных пунктов; 5–6 — глубина использования; 1–4 — слабый эффект.</p>
+<p><strong>Confidence.</strong> 9–10 — все три источника и количественный тренд; 7–8 — два источника и метрика; 5–6 — один сильный источник, причина — интерпретация; 3–4 — один источник, нет прямой метрики.</p>
+<p><strong>Ease.</strong> 8–10 — до 2 человеко-месяцев; 6–7 — 2–3; 4–5 — 4–5; 1–3 — 6 и более. Трудозатраты — допущение: в файлах их нет.</p>
+<h2 id="_2">Итоговый рейтинг</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th style="text-align: right;">Место</th>
+<th>Инициатива</th>
+<th style="text-align: right;">Impact</th>
+<th style="text-align: right;">Confidence</th>
+<th style="text-align: right;">Ease</th>
+<th style="text-align: right;">ICE</th>
+<th>Факт-основание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1</td>
+<td><strong>Согласование:</strong> внешний согласующий без учётной записи + согласование модулем на младшем тарифе</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;"><strong>360</strong></td>
+<td>13 из 62; шаг 56,7%, −9,8 процентного пункта между полугодиями (<a href="../data/user_flow.csv"><code>user_flow.csv</code></a> строка 8); использование 13,0% (<a href="../data/features.csv"><code>features.csv</code></a> строка 11)</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td><strong>Аналитика в один клик:</strong> процент снижения и «Светофор» на первом экране</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;"><strong>252</strong></td>
+<td>6 из 30; потеря 15,1 процентного пункта (<a href="../data/user_flow.csv"><code>user_flow.csv</code></a> строка 6; <code>05a</code>, таблица 2); использование 41,6% (<a href="../data/features.csv"><code>features.csv</code></a> строка 9)</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td><strong>Автопродление и отчёт о ценности</strong> перед продлением</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;"><strong>252</strong></td>
+<td>5 из 30; удержание 51,8% (<a href="../data/retention.csv"><code>retention.csv</code></a> строки 2–10); новые функции 13,0–23,0% (<a href="../data/features.csv"><code>features.csv</code></a> строки 10–12)</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td><strong>Модульная упаковка:</strong> аналитика и согласование отдельными модулями, конструктор тарифа</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;"><strong>216</strong></td>
+<td>8 из 16 отказов из-за цены пакета (<a href="../data/non_clients.txt"><code>non_clients.txt</code></a> 9, 15, 33, 45, 51, 69, 81, 87); демонстрация → счёт 37,6%, по полугодиям 43,1% → 32,2% (<a href="../data/sales.csv"><code>sales.csv</code></a> столбцы C–D)</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td><strong>Отраслевые классификаторы:</strong> фильтры по классификатору товаров, работ и услуг, общероссийскому классификатору продукции и регистрационному удостоверению; автоочистка выдачи</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;"><strong>189</strong></td>
+<td>11 из 62; потеря 19,5 процентного пункта (<a href="../data/user_flow.csv"><code>user_flow.csv</code></a> строка 3; <code>05a</code>, таблица 2)</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td><strong>Лимиты меток и шаблонов</strong></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;"><strong>160</strong></td>
+<td>9 из 62; избранное 64,6%, шаблоны 65,7% (<a href="../data/features.csv"><code>features.csv</code></a> строки 4, 6); 2 из 16 отказов (<a href="../data/non_clients.txt"><code>non_clients.txt</code></a> 27, 63)</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td><strong>Надёжность и гарантия доступности:</strong> статус-страница, компенсация при сбое</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;"><strong>96</strong></td>
+<td>4 из 30; провалы удержания 15,1–21,5 процентного пункта (<a href="../data/retention.csv"><code>retention.csv</code></a> строки 2–8; <code>03a</code>, таблица 3)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="_3">Почему такой порядок</h2>
+<p><strong>1. Согласование — 360.</strong> Максимальная уверенность: единственная тема во всех трёх источниках, 13 упоминаний из 62, единственный шаг с устойчивым снижением. Простота средняя, но этого достаточно, чтобы обойти всех. Это самый защищаемый продуктовый шаг.</p>
+<p><strong>2. Аналитика — 252.</strong> Вторая по величине потеря на шаге, 6 из 30 жалоб. Уверенность средняя: причина связи «перегружена → перестал заходить» — интерпретация, а не поле данных. Зато простота выше, чем у согласования.</p>
+<p><strong>3. Автопродление — 252.</strong> Равный балл с аналитикой, но ниже по Impact и выше по Ease. Лечит симптом, а не причину: 5 из 30 не продлили по забывчивости или не увидели нового. Дёшево и быстро.</p>
+<p><strong>4. Упаковка — 216.</strong> Impact максимальный, но Confidence 6 (нет цен и маржи в файлах) и Ease 4 (5 человеко-месяцев). В RICE она была первой за счёт охвата; ICE сначала требует проверить цену и маржу. Это не продуктовая задача в чистом виде — это решение по упаковке и прайсу.</p>
+<p><strong>5. Классификаторы — 189.</strong> Impact 9 и Confidence 7, но Ease 3: интеграция классификаторов и автоочистка — 6 человеко-месяцев. Если считать их платформой для согласования, аналитики и лимитов, Ease растёт до 4, а балл — до 252.</p>
+<p><strong>6. Лимиты — 160.</strong> Дёшево (Ease 8), но Impact 5 и Confidence 4: прямого счётчика «упёрся в лимит» нет, а июньский обрыв шаблонов на 22,1 процентного пункта может быть сдвигом замера (<code>04a</code>, отклонение 1).</p>
+<p><strong>7. Надёжность — 96.</strong> Impact 8, но Confidence 3: нет метрики доступности, аномалия разовая, 4 из 30 — нижняя оценка. Это не «надёжность не важна», это «сначала измерьте, потом ранжируйте».</p>
+<h2 id="_4">Дорожная карта по волнам</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Волна</th>
+<th>Инициативы</th>
+<th>Почему сейчас</th>
+<th>Метрика успеха</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Согласование</td>
+<td>Максимальная уверенность, умеренная сложность</td>
+<td>Шаг согласования выше 56,7%; доля подключивших модуль; отказы «нет на тарифе»</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Аналитика, автопродление</td>
+<td>Дешёвые ставки с средней уверенностью</td>
+<td>Шаг анализа выше 71,2%; доля автопродлений; использование новых функций</td>
+</tr>
+<tr>
+<td>Параллельно</td>
+<td>Упаковка</td>
+<td>Не разработка, а ценовое решение; нужна финансовая модель</td>
+<td>Переход «демонстрация → счёт» выше 37,6%; доля модульных продаж</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Классификаторы</td>
+<td>Крупнейшая потеря, но высокая сложность; сначала discovery</td>
+<td>Шаг настройки выше 78,2%; доля запросов с классификатором; доля ручных исключений</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Лимиты, надёжность</td>
+<td>Быстрый выигрыш и инструментарий</td>
+<td>Доля клиентов на пределе лимита; доступность и удержание 1→2</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="_5">Чувствительность</h2>
+<ul>
+<li>Если упаковка укладывается в 4 человеко-месяца вместо 5 (Ease 5), её балл — 270, и она поднимается на 2-е место.</li>
+<li>Если классификаторы стоят 5 человеко-месяцев вместо 6 (Ease 4), балл — 252, и они делят 2–3 место.</li>
+<li>Если у надёжности появляется метрика доступности и уверенность растёт с 3 до 4, балл — 128; она всё равно последняя, но разрыв сокращается.</li>
+<li>Верхняя тройка устойчива: согласование первое при любых разумных сдвигах. Места 2–5 меняются при изменении одной оценки на балл.</li>
+</ul>
+<h2 id="_6">Ограничения</h2>
+<ul>
+<li>ICE не использует охват, поэтому не смешивает лиды и платящих клиентов — главный дефект RICE здесь отсутствует. Но Impact, Confidence и Ease остаются экспертными оценками; в таблице указан факт, на который они опираются, а не сам балл.</li>
+<li>Денег в файлах нет: эффект выражен в процентных пунктах и счётчиках, не в рублях (<a href="../data/sales.csv"><code>sales.csv</code></a>, шапка).</li>
+<li><a href="../data/retention.csv"><code>retention.csv</code></a> не содержит причины оттока, <a href="../data/features.csv"><code>features.csv</code></a> — разреза по тарифам: связи «причина → отток» и «тариф → использование» — гипотезы, подтверждённые совпадением метрик и словами респондентов.</li>
+</ul>
+<h2 id="_7">Что делать первым</h2>
+<p>Зафиксируйте Ease с разработкой по каждой инициативе: это единственный параметр, который меняет места 2–5. До подтверждения Ease первое место занимает согласование — у него максимальная уверенность и умеренная простота.</p>
+<nav class="pager" aria-label="Навигация по страницам"><a class="pager-prev" href="../artifacts/spisok-idej.html"><span>Назад</span>Идеи</a><a class="pager-next" href="../artifacts/ocenka-biznes-effekta.html"><span>Далее</span>Бизнес-эффект</a></nav></article>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Учебный кейс 4 · анализ продукта «Закупки» за 2025 год · данные обезличены.</p>
+    <p>Собрано статически из Markdown: <code>python build.py</code>.</p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Анализ файла user_flow.csv · Карта проекта</title>
+<meta name="description" content="Успешность шагов ключевого сценария с учётом SLA и сквозная конверсия.">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark"></span>
+      <span class="brand-text">Карта проекта<small>Закупки · медицинские учреждения</small></span>
+    </a>
+    <nav class="top-nav" aria-label="Разделы"><a href="../index.html#analysis">Анализ</a><a href="../index.html#result">Результат</a><a href="../index.html#data">Данные</a></nav>
+  </div>
+</header>
+<main class="wrap">
+<nav class="crumbs" aria-label="Хлебные крошки"><a href="../index.html">Главная</a><span>/</span><a href="../index.html#analysis">Анализ данных</a><span>/</span><span>05. Сценарий</span></nav>
+<article class="prose">
+<h1 id="user_flowcsv">Анализ файла user_flow.csv</h1>
+<p><strong>Что в файле:</strong> 11 шагов ключевого пользовательского сценария и 12 месяцев 2025 года. Значения — доля успешных прохождений шага в процентах. Значения на некоторых шагах выше, чем на предыдущих (шаг 4 — 91,5% против шага 3 — 81,7%; шаг 6 — 80,2% против шага 5 — 71,2%; шаг 10 — 84,8% против шага 9 — 79,9%), поэтому это не доли от числа вошедших в сценарий, а показатели успешности каждого шага. Сквозная конверсия в таблице 2 рассчитана как произведение конверсий шагов; в файле такого столбца нет. Названия шагов сокращены, полные — в файле.</p>
+<h2 id="1">Таблица 1. Успешность шагов</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Шаг</th>
+<th style="text-align: right;">Среднее</th>
+<th style="text-align: right;">Наименьшее</th>
+<th>Месяц наименьшего</th>
+<th style="text-align: right;">Наибольшее</th>
+<th>Месяц наибольшего</th>
+<th style="text-align: right;">Январь</th>
+<th style="text-align: right;">Декабрь</th>
+<th style="text-align: right;">Изменение январь → декабрь</th>
+<th style="text-align: right;">Второе полугодие минус первое</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Регистрация и ввод номера организации</td>
+<td style="text-align: right;">89,5%</td>
+<td style="text-align: right;">87,3%</td>
+<td>июнь</td>
+<td style="text-align: right;">92,9%</td>
+<td>декабрь</td>
+<td style="text-align: right;">91,4%</td>
+<td style="text-align: right;">92,9%</td>
+<td style="text-align: right;">+1,5</td>
+<td style="text-align: right;">+0,6</td>
+</tr>
+<tr>
+<td>2. Настройка поиска и шаблон по отрасли</td>
+<td style="text-align: right;">78,2%</td>
+<td style="text-align: right;">76,8%</td>
+<td>февраль</td>
+<td style="text-align: right;">79,9%</td>
+<td>июль</td>
+<td style="text-align: right;">79,2%</td>
+<td style="text-align: right;">77,2%</td>
+<td style="text-align: right;">−2,0</td>
+<td style="text-align: right;">+0,2</td>
+</tr>
+<tr>
+<td>3. Подключение уведомлений</td>
+<td style="text-align: right;">81,7%</td>
+<td style="text-align: right;">79,8%</td>
+<td>август</td>
+<td style="text-align: right;">84,9%</td>
+<td>декабрь</td>
+<td style="text-align: right;">82,6%</td>
+<td style="text-align: right;">84,9%</td>
+<td style="text-align: right;">+2,3</td>
+<td style="text-align: right;">+0,6</td>
+</tr>
+<tr>
+<td>4. Просмотр выдачи и карточки закупки</td>
+<td style="text-align: right;">91,5%</td>
+<td style="text-align: right;">89,4%</td>
+<td>август</td>
+<td style="text-align: right;">93,8%</td>
+<td>июнь</td>
+<td style="text-align: right;">91,4%</td>
+<td style="text-align: right;">89,4%</td>
+<td style="text-align: right;">−2,0</td>
+<td style="text-align: right;">−1,6</td>
+</tr>
+<tr>
+<td>5. Анализ закупки</td>
+<td style="text-align: right;">71,2%</td>
+<td style="text-align: right;">69,1%</td>
+<td>февраль</td>
+<td style="text-align: right;">74,4%</td>
+<td>август</td>
+<td style="text-align: right;">71,8%</td>
+<td style="text-align: right;">69,9%</td>
+<td style="text-align: right;">−1,9</td>
+<td style="text-align: right;">+0,5</td>
+</tr>
+<tr>
+<td>6. Сохранение в избранное и метка</td>
+<td style="text-align: right;">80,2%</td>
+<td style="text-align: right;">78,5%</td>
+<td>январь</td>
+<td style="text-align: right;">82,0%</td>
+<td>декабрь</td>
+<td style="text-align: right;">78,5%</td>
+<td style="text-align: right;">82,0%</td>
+<td style="text-align: right;">+3,5</td>
+<td style="text-align: right;">+0,3</td>
+</tr>
+<tr>
+<td>7. Согласование</td>
+<td style="text-align: right;">56,7%</td>
+<td style="text-align: right;">49,5%</td>
+<td>август</td>
+<td style="text-align: right;">64,3%</td>
+<td>февраль</td>
+<td style="text-align: right;">62,0%</td>
+<td style="text-align: right;">54,7%</td>
+<td style="text-align: right;">−7,3</td>
+<td style="text-align: right;">−9,8</td>
+</tr>
+<tr>
+<td>8. Принятие решения на доске задач</td>
+<td style="text-align: right;">77,7%</td>
+<td style="text-align: right;">75,1%</td>
+<td>апрель</td>
+<td style="text-align: right;">80,8%</td>
+<td>декабрь</td>
+<td style="text-align: right;">77,3%</td>
+<td style="text-align: right;">80,8%</td>
+<td style="text-align: right;">+3,5</td>
+<td style="text-align: right;">+1,2</td>
+</tr>
+<tr>
+<td>9. Подготовка заявки</td>
+<td style="text-align: right;">79,9%</td>
+<td style="text-align: right;">77,7%</td>
+<td>апрель</td>
+<td style="text-align: right;">82,7%</td>
+<td>июнь</td>
+<td style="text-align: right;">79,8%</td>
+<td style="text-align: right;">78,4%</td>
+<td style="text-align: right;">−1,4</td>
+<td style="text-align: right;">+0,2</td>
+</tr>
+<tr>
+<td>10. Подача заявки на электронной площадке</td>
+<td style="text-align: right;">84,8%</td>
+<td style="text-align: right;">82,0%</td>
+<td>февраль</td>
+<td style="text-align: right;">86,5%</td>
+<td>декабрь</td>
+<td style="text-align: right;">84,9%</td>
+<td style="text-align: right;">86,5%</td>
+<td style="text-align: right;">+1,6</td>
+<td style="text-align: right;">+0,4</td>
+</tr>
+<tr>
+<td>11. Отслеживание результата</td>
+<td style="text-align: right;">55,8%</td>
+<td style="text-align: right;">52,4%</td>
+<td>декабрь</td>
+<td style="text-align: right;">57,6%</td>
+<td>февраль</td>
+<td style="text-align: right;">55,6%</td>
+<td style="text-align: right;">52,4%</td>
+<td style="text-align: right;">−3,2</td>
+<td style="text-align: right;">−0,9</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="2">Таблица 2. Конверсии этапов и расчётная сквозная конверсия</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Шаг</th>
+<th style="text-align: right;">Конверсия шага, среднее</th>
+<th style="text-align: right;">Наименьшее</th>
+<th style="text-align: right;">Наибольшее</th>
+<th style="text-align: right;">Потеря на шаге, процентного пункта</th>
+<th style="text-align: right;">Сквозная конверсия от начала сценария</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Регистрация и ввод номера организации</td>
+<td style="text-align: right;">89,5%</td>
+<td style="text-align: right;">87,3%</td>
+<td style="text-align: right;">92,9%</td>
+<td style="text-align: right;">10,5</td>
+<td style="text-align: right;">89,5%</td>
+</tr>
+<tr>
+<td>2. Настройка поиска и шаблон по отрасли</td>
+<td style="text-align: right;">78,2%</td>
+<td style="text-align: right;">76,8%</td>
+<td style="text-align: right;">79,9%</td>
+<td style="text-align: right;">19,5</td>
+<td style="text-align: right;">70,0%</td>
+</tr>
+<tr>
+<td>3. Подключение уведомлений</td>
+<td style="text-align: right;">81,7%</td>
+<td style="text-align: right;">79,8%</td>
+<td style="text-align: right;">84,9%</td>
+<td style="text-align: right;">12,8</td>
+<td style="text-align: right;">57,2%</td>
+</tr>
+<tr>
+<td>4. Просмотр выдачи и карточки закупки</td>
+<td style="text-align: right;">91,5%</td>
+<td style="text-align: right;">89,4%</td>
+<td style="text-align: right;">93,8%</td>
+<td style="text-align: right;">4,9</td>
+<td style="text-align: right;">52,4%</td>
+</tr>
+<tr>
+<td>5. Анализ закупки</td>
+<td style="text-align: right;">71,2%</td>
+<td style="text-align: right;">69,1%</td>
+<td style="text-align: right;">74,4%</td>
+<td style="text-align: right;">15,1</td>
+<td style="text-align: right;">37,3%</td>
+</tr>
+<tr>
+<td>6. Сохранение в избранное и метка</td>
+<td style="text-align: right;">80,2%</td>
+<td style="text-align: right;">78,5%</td>
+<td style="text-align: right;">82,0%</td>
+<td style="text-align: right;">7,4</td>
+<td style="text-align: right;">29,9%</td>
+</tr>
+<tr>
+<td>7. Согласование</td>
+<td style="text-align: right;">56,7%</td>
+<td style="text-align: right;">49,5%</td>
+<td style="text-align: right;">64,3%</td>
+<td style="text-align: right;">12,9</td>
+<td style="text-align: right;">17,0%</td>
+</tr>
+<tr>
+<td>8. Принятие решения на доске задач</td>
+<td style="text-align: right;">77,7%</td>
+<td style="text-align: right;">75,1%</td>
+<td style="text-align: right;">80,8%</td>
+<td style="text-align: right;">3,8</td>
+<td style="text-align: right;">13,2%</td>
+</tr>
+<tr>
+<td>9. Подготовка заявки</td>
+<td style="text-align: right;">79,9%</td>
+<td style="text-align: right;">77,7%</td>
+<td style="text-align: right;">82,7%</td>
+<td style="text-align: right;">2,7</td>
+<td style="text-align: right;">10,5%</td>
+</tr>
+<tr>
+<td>10. Подача заявки на электронной площадке</td>
+<td style="text-align: right;">84,8%</td>
+<td style="text-align: right;">82,0%</td>
+<td style="text-align: right;">86,5%</td>
+<td style="text-align: right;">1,6</td>
+<td style="text-align: right;">8,9%</td>
+</tr>
+<tr>
+<td>11. Отслеживание результата</td>
+<td style="text-align: right;">55,8%</td>
+<td style="text-align: right;">52,4%</td>
+<td style="text-align: right;">57,6%</td>
+<td style="text-align: right;">3,9</td>
+<td style="text-align: right;">5,0%</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="_1">Факты</h2>
+<ol>
+<li>В файле 11 шагов и 12 месяцев. Наименьшее значение среди всех ячеек — 49,5% (шаг 7, август), наибольшее — 93,8% (шаг 4, июнь).</li>
+<li>Ниже 60% в среднем — два шага: согласование 56,7% и отслеживание результата 55,8%.</li>
+<li>Выше 89% в среднем — два шага: регистрация 89,5% и просмотр выдачи 91,5%.</li>
+<li>Расчётная сквозная конверсия от начала до конца сценария — 5,0%. По месяцам она находится в диапазоне от 4,2% (октябрь) до 5,6% (январь).</li>
+<li>Три шага дают половину всех потерь: настройка поиска — 19,5 процентного пункта, анализ закупки — 15,1, согласование — 12,9. В сумме 47,5 из 95,0 процентного пункта.</li>
+<li>Наименьшие потери — на шагах 10, 9 и 8: 1,6, 2,7 и 3,8 процентного пункта.</li>
+<li>У 10 из 11 шагов разница между вторым и первым полугодием находится в пределах 1,6 процентного пункта. У согласования она составляет −9,8 процентного пункта.</li>
+</ol>
+<h2 id="_2">Закономерности</h2>
+<ol>
+<li>Значения большинства шагов стабильны в течение года: у 10 шагов размах между наименьшим и наибольшим значением не превышает 5,7 процентного пункта. У согласования размах 14,8 процентного пункта.</li>
+<li>Согласование — единственный шаг с устойчивым снижением: с января по июнь значения 59,4–64,3%, с июля по декабрь 49,5–54,7%. Переход с июня (60,0%) на июль (52,2%) — минус 7,8 процентного пункта за месяц.</li>
+<li>Пять шагов в декабре выше, чем в январе: регистрация (+1,5), подключение уведомлений (+2,3), сохранение в избранное (+3,5), принятие решения (+3,5), подача заявки (+1,6). Шесть шагов ниже: настройка поиска (−2,0), просмотр выдачи (−2,0), анализ закупки (−1,9), согласование (−7,3), подготовка заявки (−1,4), отслеживание результата (−3,2).</li>
+<li>Отслеживание результата — самый низкий шаг в декабре (52,4%) и второй по низкому среднему значению (55,8%). Его разница между полугодиями мала (−0,9 процентного пункта), снижение приходится на конец года.</li>
+<li>Расчётная сквозная конверсия с июля по декабрь ниже 5% (от 4,2% до 4,9%); в первом полугодии — от 5,2% до 5,6%.</li>
+</ol>
+<h2 id="_3">Отклонения</h2>
+<ol>
+<li>Июль: согласование снижается с 60,0% до 52,2% (−7,8 процентного пункта); в августе достигает минимума 49,5%.</li>
+<li>Декабрь: отслеживание результата достигает минимума 52,4% и снижается на 2,6 процентного пункта к ноябрю (55,0%).</li>
+<li>Октябрь: минимум расчётной сквозной конверсии — 4,2%.</li>
+<li>Январь: максимум расчётной сквозной конверсии — 5,6%.</li>
+<li>Февраль: максимум согласования — 64,3%; август: минимум 49,5%. Разница 14,8 процентного пункта.</li>
+<li>Июнь: максимум просмотра выдачи — 93,8%; август и декабрь: минимум 89,4%.</li>
+<li>Апрель: минимум принятия решения — 75,1%; декабрь: максимум 80,8%.</li>
+<li>Декабрь: максимум сохранения в избранное — 82,0%, на 3,5 процентного пункта выше января.</li>
+</ol>
+<nav class="pager" aria-label="Навигация по страницам"><a class="pager-prev" href="../artifacts/04a-analiz-features.html"><span>Назад</span>04. Функции</a><a class="pager-next" href="../artifacts/06a-analiz-support.html"><span>Далее</span>06. Поддержка</a></nav></article>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Учебный кейс 4 · анализ продукта «Закупки» за 2025 год · данные обезличены.</p>
+    <p>Собрано статически из Markdown: <code>python build.py</code>.</p>
+  </div>
+</footer>
+</body>
+</html>
